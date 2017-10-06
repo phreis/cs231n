@@ -1,0 +1,10 @@
+start:
+
+1- virt env:
+source source .env/bin/activate.fish
+(deactivate)
+
+2- start jupyter nb:
+jupyter notebook
+
+
