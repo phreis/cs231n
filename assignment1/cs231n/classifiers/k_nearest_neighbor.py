@@ -102,8 +102,8 @@ class KNearestNeighbor(object):
         #dists[i]= m.sqrt(sum(pow((X[i]-(self.X_train,axis=0)),2)))
 
        #  dists[i]= m.sqrt(sum((X[i]-self.X_train)**2,axis=1))
-        dists[i]= np.sqrt(np.sum((X[i]-self.X_train)**2,axis=1))
-
+      #  dists[i]= np.sqrt(np.sum((X[i]-self.X_train)**2,axis=1))
+         dists[i] = np.sqrt(np.sum(np.square(self.X_train - X[i,:]), axis = 1))
         #dists[i]= m.sqrt(sum((X[i]-self.X_train)**2,axis=1))
       #######################################################################
       #                         END OF YOUR CODE                            #
